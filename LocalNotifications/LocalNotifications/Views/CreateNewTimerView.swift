@@ -12,7 +12,8 @@ class CreateNewTimerView: UIView {
 
     public lazy var datePicker: UIDatePicker = {
        let datePicker = UIDatePicker()
-        datePicker.date = Date()
+        datePicker.datePickerMode = .countDownTimer
+        datePicker.countDownDuration = 60
         return datePicker
     }()
     

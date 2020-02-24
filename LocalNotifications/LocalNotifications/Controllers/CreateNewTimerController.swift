@@ -18,7 +18,7 @@ class CreateNewTimerController: UIViewController {
     
     public weak var delegate: CreateNewTimerControllerDelegate?
     
-    private var timeInterval: TimeInterval = Date().timeIntervalSinceNow + 10
+    private var timeInterval: TimeInterval = 60
     
     override func loadView(){
         view = timerView
@@ -40,7 +40,7 @@ class CreateNewTimerController: UIViewController {
     
     private func reset(){
         DispatchQueue.main.async{
-            self.timerView.datePicker.date = Date()
+            self.timerView.datePicker.countDownDuration = 60
             self.timerView.messageTextField.text = ""
         }
     }
@@ -58,7 +58,6 @@ class CreateNewTimerController: UIViewController {
         let iD = UUID().uuidString
         
         // Step 3: Create an attachment (Optional Implementation)
-        //let attachment = UNNotificationAttachment(identifier: iD, url: Bundle.main.path(forResource: "" , withExtension: ""), options: nil)
         
         // Step 4: Create a trigger
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: timeInterval, repeats: false)
@@ -86,7 +85,7 @@ class CreateNewTimerController: UIViewController {
         guard sender.date > Date() else {
             return
         }
-        timeInterval = sender.date.timeIntervalSinceNow
+        timeInterval = sender.countDownDuration
     }
     
     @IBAction func submitButtonPressed(_ sender: UIButton){

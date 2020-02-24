@@ -19,7 +19,6 @@
 		C464556D23FE0DBE000229A7 /* TimerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C464556C23FE0DBE000229A7 /* TimerCell.swift */; };
 		C464559623FF17AE000229A7 /* PendingNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C464559523FF17AE000229A7 /* PendingNotification.swift */; };
 		C464559923FF1ACA000229A7 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C464559823FF1ACA000229A7 /* UIViewController+Extensions.swift */; };
-		C464559B23FF1D2C000229A7 /* msPacMan.png in Resources */ = {isa = PBXBuildFile; fileRef = C464559A23FF1D2C000229A7 /* msPacMan.png */; };
 		C464559D23FF2A69000229A7 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C464559C23FF2A69000229A7 /* String+Extensions.swift */; };
 		C464559F23FF3D64000229A7 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C464559E23FF3D64000229A7 /* EmptyStateView.swift */; };
 /* End PBXBuildFile section */
@@ -39,7 +38,6 @@
 		C464556C23FE0DBE000229A7 /* TimerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCell.swift; sourceTree = "<group>"; };
 		C464559523FF17AE000229A7 /* PendingNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingNotification.swift; sourceTree = "<group>"; };
 		C464559823FF1ACA000229A7 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
-		C464559A23FF1D2C000229A7 /* msPacMan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = msPacMan.png; sourceTree = "<group>"; };
 		C464559C23FF2A69000229A7 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		C464559E23FF3D64000229A7 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,7 +100,6 @@
 				C464556223FDC200000229A7 /* MainTabBarController.swift */,
 				C464555023FDC079000229A7 /* ViewController.swift */,
 				C464556423FE0C9B000229A7 /* CreateNewTimerController.swift */,
-				C464559A23FF1D2C000229A7 /* msPacMan.png */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -200,7 +197,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C464559B23FF1D2C000229A7 /* msPacMan.png in Resources */,
 				C464555923FDC07E000229A7 /* LaunchScreen.storyboard in Resources */,
 				C464555623FDC07E000229A7 /* Assets.xcassets in Resources */,
 			);
